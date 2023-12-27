@@ -7,14 +7,17 @@ const Main = () => {
           <h1>TODO List</h1>
         </div>
         <div className="box-container">
-          <div className="new-task-container">
-            <form>
-              <label className="input-title">New task</label>
-              <input type="text" />
-              <button type='submit'>Add</button>
-              <button type='cancel'>Cancel</button>
-            </form>
-          </div>
+          <form className="new-task-container">
+            <label className="input-title">New task</label>
+            <div className='form'>
+              <input className='new-task-input' type="text" />
+              <div className="form-buttons">
+                <button type="submit" className='button'>Add</button>
+                <button type="cancel" className='button'>Cancel</button>
+              </div>
+            </div>
+          </form>
+          <div className="tasks-container"></div>
         </div>
       </div>
     );

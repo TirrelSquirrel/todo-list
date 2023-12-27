@@ -19,3 +19,43 @@
   padding: 0 5px;
   margin: 10px;
 }
+
+.box-container {
+  background-color: palevioletred;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.new-task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-title {
+  text-align: left;
+  font-weight: bolder;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 3px;
+}
+
+.new-task-input {
+  height: 50%;
+  align-self: center;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+}
