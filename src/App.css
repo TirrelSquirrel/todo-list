@@ -1,7 +1,7 @@
 .main-container {
   margin: auto;
 
-  background-color: rgb(48, 48, 92);
+  background-color: #233d4d;
 
   text-align: center;
 
@@ -11,32 +11,49 @@
   justify-content: center;
   height: 100vh;
   width: 90vw;
+
+  font-weight: bold;
+
+  user-select: none;
 }
 
 .title-container {
-  background-color: rgb(48, 83, 92);
+  background-color: #619b8a;
   border-radius: 20px;
   padding: 0 5px;
   margin: 10px;
+  text-shadow: 3px 3px 2px rgba(35, 61, 77, 1);
 }
 
 .box-container {
-  background-color: palevioletred;
+  flex: 1;
+  background-color: #619b8a;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-items: center;
+  margin-bottom: 10px;
+
+  width: 90%;
+  border-radius: 15px;
 }
 
 .new-task-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #a1c181;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .input-title {
   text-align: left;
   font-weight: bolder;
+  text-shadow: 3px 3px 2px rgba(97, 155, 138, 1);
 }
 
 .form {
@@ -51,11 +68,55 @@
 }
 
 .new-task-input {
-  height: 50%;
+  height: 75%;
   align-self: center;
+  border: none;
+  border-radius: 5px;
+  user-select: none;
 }
 
 .button {
   border: none;
   border-radius: 5px;
+  color: #233d4d;
+  font-weight: bolder;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.button:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.submit {
+  background-color: #fcca46;
+}
+
+.cancel {
+  background-color: #fe7f2d;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.task-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0 5px;
+
+  background-color: #a1c181;
+  border-radius: 10px;
+}
+
+.task-buttons {
+  align-self: center;
 }
